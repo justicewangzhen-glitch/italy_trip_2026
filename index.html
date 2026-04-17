@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇮🇹 Italy Trip 2026 — 完整行程规划</title>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --border: #e8e4df;
+    --text: #2c2c2c;
+    --text-muted: #6b6560;
+    --accent: #c0392b;
+    --accent-bg: #fdf2f1;
+    --blue: #1a5276;
+    --blue-bg: #eaf4fb;
+    --green: #1e8449;
+    --green-bg: #eaf7ee;
+    --orange: #d35400;
+    --orange-bg: #fef5ec;
+    --purple: #6c3483;
+    --purple-bg: #f5eef8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  /* Header */
+  .doc-header {
+    background: linear-gradient(135deg, #1a3a5c, #2c5282);
+    color: white;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+  .doc-header h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .doc-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .doc-meta span {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    padding: 0.25rem 0.85rem;
+    font-size: 0.82rem;
+    backdrop-filter: blur(4px);
+  }
+  .doc-meta .badge-red { background: rgba(192,57,43,0.7); border-color: #c0392b; }
+  .doc-meta .badge-green { background: rgba(30,132,73,0.7); border-color: #1e8449; }
+  .doc-meta .badge-orange { background: rgba(211,84,0,0.7); border-color: #d35400; }
+
+  /* Section headings */
+  h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(90deg, #2c5282, #3182ce);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    margin: 2.5rem 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  h2:first-of-type { margin-top: 0; }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c5282;
+    border-left: 4px solid #3182ce;
+    padding-left: 0.75rem;
+    margin: 1.8rem 0 0.7rem;
+  }
+
+  h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin: 1.2rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  /* Cards */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+
+  .card.alert {
+    border-left: 4px solid var(--accent);
+    background: var(--accent-bg);
+  }
+  .card.info {
+    border-left: 4px solid var(--blue);
+    background: var(--blue-bg);
+  }
+  .card.success {
+    border-left: 4px solid var(--green);
+    background: var(--green-bg);
+  }
+  .card.warning {
+    border-left: 4px solid var(--orange);
+    background: var(--orange-bg);
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.8rem 0 1rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  thead tr {
+    background: #2c5282;
+    color: white;
+  }
+  thead th {
+    padding: 0.65rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+  }
+  tbody tr:nth-child(even) { background: #f8f6f4; }
+  tbody tr:nth-child(odd) { background: white; }
+  td {
+    padding: 0.55rem 0.9rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+
+  /* Blockquotes / callouts */
+  blockquote {
+    margin: 0.8rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+  blockquote.warning {
+    background: var(--orange-bg);
+    border-left: 4px solid var(--orange);
+    color: #7d4a00;
+  }
+  blockquote.tip {
+    background: var(--green-bg);
+    border-left: 4px solid var(--green);
+    color: #1a5c30;
+  }
+  blockquote.info {
+    background: var(--blue-bg);
+    border-left: 4px solid var(--blue);
+    color: #1a3a5c;
+  }
+  blockquote.alert {
+    background: var(--accent-bg);
+    border-left: 4px solid var(--accent);
+    color: #7b1f1f;
+  }
+
+  /* Code blocks */
+  pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    font-family: "SF Mono", "Cascadia Code", "Fira Code", monospace;
+    font-size: 0.82rem;
+    line-height: 1.8;
+    overflow-x: auto;
+    margin: 0.8rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  /* Inline code */
+  code {
+    background: #f0ece8;
+    color: #c0392b;
+    padding: 0.15em 0.45em;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-family: "SF Mono", monospace;
+  }
+  pre code { background: transparent; color: inherit; padding: 0; }
+
+  /* Lists */
+  ul, ol {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0 0.8rem;
+  }
+  li { margin-bottom: 0.35rem; }
+
+  /* Checklist */
+  input[type="checkbox"] { margin-right: 0.5rem; accent-color: #2c5282; }
+
+  /* Dividers */
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+  }
+
+  /* Badges / status */
+  .priority-red { color: #c0392b; font-weight: 700; }
+  .priority-orange { color: #d35400; font-weight: 700; }
+  .priority-yellow { color: #b7950b; font-weight: 700; }
+  .confirmed { color: #1e8449; font-weight: 600; }
+
+  /* Print */
+  @media print {
+    body { background: white; font-size: 12px; }
+    .doc-header { box-shadow: none; }
+    pre { white-space: pre-wrap; }
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 1rem 0.8rem; }
+    .doc-header { padding: 1.5rem 1.2rem; }
+    .doc-header h1 { font-size: 1.5rem; }
+    table { font-size: 0.8rem; }
+    thead th, td { padding: 0.45rem 0.6rem; }
+    pre { font-size: 0.75rem; }
+  }
+
+/* Map block */
+  .map-block {
+    background: #1e293b;
+    color: #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    font-size: 0.8rem;
+    margin: 0.8rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  /* Florence Map CSS Grid */
+  .firenze-map {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 60px;
+    grid-template-rows: 60px 1fr 1fr 1fr 60px;
+    gap: 6px;
+    margin-top: 1rem;
+    min-height: 320px;
+  }
+
+  .map-compass-n {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 600;
+  }
+
+  .map-compass-s {
+    grid-column: 2 / 4;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 600;
+  }
+
+  .map-compass-w {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+  }
+
+  .map-compass-e {
+    grid-column: 4;
+    grid-row: 2 / 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+  }
+
+  .map-nw-zone {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .map-ne-zone {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+  }
+
+  .map-center {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map-se-zone {
+    grid-column: 3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0.5rem;
+  }
+
+  .map-sw-zone {
+    grid-column: 2 / 4;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .map-pin {
+    background: #2563eb;
+    border: 2px solid #60a5fa;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    color: #fff;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  .map-pin .pin-time {
+    color: #fbbf24;
+    font-weight: 700;
+  }
+
+  .map-pin .pin-sub {
+    color: #94a3b8;
+    font-size: 0.65rem;
+  }
+
+  .map-connector {
+    font-size: 0.68rem;
+    color: #64748b;
+    margin-top: 3px;
+  }
+
+  .map-arrow-down {
+    font-size: 0.9rem;
+    color: #60a5fa;
+    text-align: center;
+  }
+
+  .map-label-axis {
+    font-size: 0.7rem;
+    color: #475569;
+    margin-top: 2px;
+  }
+
+  /* Email block */
+  .email-block {
+    background: #f8f7f5;
+    border: 1px solid #e0dcd7;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: #444;
+    white-space: pre-wrap;
+    margin: 0.8rem 0;
+  }
+
+  .footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.78rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- ==================== HEADER ==================== -->
+<div class="doc-header">
+  <h1>🇮🇹 Italy Trip 2026 — 完整行程规划</h1>
+  <div style="opacity:0.9; font-size:0.95rem; margin-top:0.3rem;">
+    行程：2026-05-02 → 05-07（返程日期待最终确认🔴）<br>
+    身份：伴郎 · 托斯卡纳婚礼（Villa di Geggiano）
+  </div>
+  <div class="doc-meta">
+    <span class="badge-red">🔴 Rome返程日期待确认</span>
+    <span>版本 v7.5 · 修订：2026-04-18</span>
+    <span class="badge-green">✅ 佛罗伦萨票务全确认</span>
+  </div>
+</div>
+
+<!-- ==================== 本次修订要点 ==================== -->
+<div class="card alert">
+  <strong>📌 本次修订要点（v7.4 → v7.5）</strong>
+  <table style="margin-top:0.7rem;">
+    <thead><tr><th>类别</th><th>修订内容</th></tr></thead>
+    <tbody>
+      <tr><td>✅ 自驾路线升级</td><td>新增普通公路 SS2 / Via Francigena 详细攻略，替代A1高速方案</td></tr>
+      <tr><td>✅ 导航设置说明</td><td>Google Maps 设置"避免高速公路"操作步骤</td></tr>
+      <tr><td>✅ 自驾建议</td><td>3人轮流驾驶，一人开一段，停车指引（Parcheggio Il Campo）</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== 紧急待办 ==================== -->
+<h2>🚨 紧急待办（出发前必须完成）</h2>
+<table>
+  <thead><tr><th>优先级</th><th>事项</th><th>链接/备注</th></tr></thead>
+  <tbody>
+    <tr><td class="priority-red">🔴 待确认</td><td>Rome返程日期（可能5月7日→5月8日）</td><td>通知海南航空</td></tr>
+    <tr><td class="priority-red">🔴 立即抢</td><td>斗兽场门票（5月6日，13:00场次）</td><td>ticketing.colosseo.it</td></tr>
+    <tr><td class="priority-red">🔴 立即抢</td><td>梵蒂冈博物馆门票（5月6日，16:00场次）</td><td>tickets.museivaticani.va</td></tr>
+    <tr><td class="priority-red">🔴 今晚发</td><td>Buccellati 罗马直营店询货邮件</td><td>见本文末附录</td></tr>
+    <tr><td class="priority-red">🔴 今晚发</td><td>Beccacece Gioielli 询货邮件</td><td>见本文末附录</td></tr>
+    <tr><td class="priority-orange">🟡 尽快订</td><td>万神殿门票（€5，提前官网预约）</td><td>coopculture.it</td></tr>
+    <tr><td class="priority-orange">🟡 尽快订</td><td>佛罗伦萨酒店（5月2-4日，2晚，¥4,000-5,000）</td><td>—</td></tr>
+    <tr><td class="priority-orange">🟡 尽快订</td><td>罗马酒店（5月6-7日或5月6-8日，1-2晚）</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<!-- ==================== 已确认预订 ==================== -->
+<h2>✅ 已确认预订</h2>
+<table>
+  <thead><tr><th>票种</th><th>日期</th><th>入场时间</th><th>集合时间</th><th>金额</th><th>订单号</th><th>备注</th></tr></thead>
+  <tbody>
+    <tr><td>Uffizi 美术馆（中文导览）</td><td>5月2日</td><td>16:00</td><td>15:45到</td><td>$70.80 USD</td><td>GYGMX4L557XF</td><td>5/1 16:00前可全额退款</td></tr>
+    <tr><td>Accademia Gallery（大卫真迹）</td><td>5月2日</td><td>17:30-17:45</td><td>—</td><td>€24/人</td><td>22534267</td><td>2人合计€48</td></tr>
+    <tr><td>Duomo Dome + 大教堂通票</td><td>5月3日</td><td>15:00</td><td>14:45到</td><td>$176.76 USD</td><td>GYGKBGGA7RWR</td><td>5/2 15:00前可全额退款</td></tr>
+  </tbody>
+</table>
+<blockquote class="info">
+  🔍 <strong>三张票全部核实有效，</strong>详见下方"佛罗伦萨票务核实报告"。
+</blockquote>
+
+<!-- ==================== 票务核实报告 ==================== -->
+<h2>🏛️ 佛罗伦萨票务核实报告（PDF原件已确认）</h2>
+<div class="card info">
+  以下信息均来自用户提供的GetYourGuide/PDF原件，全部核实有效。
+</div>
+
+<h3>🎫 票1 · Uffizi 美术馆（含中文语音导览）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>票种</strong></td><td>Uffizi Gallery Entry Ticket with Audioguide（<strong>仅含Uffizi，不含Accademia</strong>）</td></tr>
+    <tr><td><strong>日期</strong></td><td>2026年5月2日（周六）</td></tr>
+    <tr><td><strong>入场时间</strong></td><td>16:00</td></tr>
+    <tr><td><strong>集合时间</strong></td><td>15:45（请提前15分钟）</td></tr>
+    <tr><td><strong>集合地点</strong></td><td>Piazzale degli Uffizi, 5（多纳泰罗雕像下方）</td></tr>
+    <tr><td><strong>接站标识</strong></td><td>持<strong>紫色旗帜</strong>，Crown Tours 工作人员</td></tr>
+    <tr><td><strong>订单号</strong></td><td>GYGMX4L557XF</td></tr>
+    <tr><td><strong>人数</strong></td><td>2成人</td></tr>
+    <tr><td><strong>金额</strong></td><td>$70.80 USD</td></tr>
+    <tr><td><strong>语言</strong></td><td>中文语音导览</td></tr>
+    <tr><td><strong>游览时长</strong></td><td>约1小时（精华四厅：波提切利厅+达芬奇厅+拉斐尔厅+提香厅）</td></tr>
+    <tr><td><strong>App下载</strong></td><td>pg.unlockmy.app/NvkebGXZr2eiK3ga7（用户名：BGA-000232 / 密码：18910）</td></tr>
+    <tr><td><strong>取消政策</strong></td><td>5月1日 16:00前可全额退款</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">⚠️ <strong>馆内无网络，必须在出发前提前下载好语音导览App。</strong></blockquote>
+
+<h3>🎫 票2 · Accademia Gallery（大卫真迹）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>票种</strong></td><td>Galleria dell'Accademia — Digital Title（数字票）</td></tr>
+    <tr><td><strong>日期</strong></td><td>2026年5月2日（周六）</td></tr>
+    <tr><td><strong>入场窗口</strong></td><td>17:30 - 17:45（在这个时间段内入场即可，不是17:30截止）</td></tr>
+    <tr><td><strong>游览时长</strong></td><td>约45分钟</td></tr>
+    <tr><td><strong>游览内容</strong></td><td>大卫雕像真迹（主厅）+ 囚犯雕像 + 圣殇</td></tr>
+    <tr><td><strong>订单号</strong></td><td>22534267（GetYourGuide）</td></tr>
+    <tr><td><strong>客户号</strong></td><td>3930483</td></tr>
+    <tr><td><strong>持票人</strong></td><td>ZHEN WANG（€24）、WEIMING LONG（€24）</td></tr>
+    <tr><td><strong>金额</strong></td><td>€24/人 = 合计<strong>€48</strong>（含€20门票 + €4预约费）</td></tr>
+    <tr><td><strong>地址</strong></td><td>Via Riasoli, 60，50122 Firenze</td></tr>
+  </tbody>
+</table>
+<blockquote class="tip">💡 从Uffizi步行约15分钟到Accademia（17:15出发时间充裕）。建议路线：Via dei Calzaiuoli → Duomo → Via del Corso。</blockquote>
+
+<h3>🎫 票3 · Brunelleschi's Dome 登顶 + Duomo 大教堂通票</h3>
+<table>
+  <tbody>
+    <tr><td><strong>票种</strong></td><td>Florence: Brunelleschi's Dome Climb Entry Ticket & Duomo</td></tr>
+    <tr><td><strong>日期</strong></td><td>2026年5月3日（周日）</td></tr>
+    <tr><td><strong>入场时间</strong></td><td>15:00</td></tr>
+    <tr><td><strong>集合时间</strong></td><td>14:45（请提前15分钟）</td></tr>
+    <tr><td><strong>集合地点</strong></td><td>Piazza del Duomo, 15R（Duomo左侧<strong>Lindt巧克力店门口</strong>）</td></tr>
+    <tr><td><strong>接站标识</strong></td><td>持<strong>白色旗帜</strong>，Nicom Tours 工作人员</td></tr>
+    <tr><td><strong>订单号</strong></td><td>GYGKBGGA7RWR</td></tr>
+    <tr><td><strong>入场PIN码</strong></td><td>LjLh/D6W</td></tr>
+    <tr><td><strong>人数</strong></td><td>2成人（Zhen Wang 1/2、Weiming Long 2/2）</td></tr>
+    <tr><td><strong>金额</strong></td><td>$176.76 USD</td></tr>
+    <tr><td><strong>语言</strong></td><td>英语</td></tr>
+    <tr><td><strong>通票有效期</strong></td><td><strong>3天</strong>（洗礼堂 + Opera del Duomo Museum + 穹顶 + 钟楼）</td></tr>
+    <tr><td><strong>游览时长</strong></td><td>约1-1.5小时</td></tr>
+    <tr><td><strong>高度/台阶</strong></td><td>116米，<strong>463级台阶，无电梯</strong></td></tr>
+    <tr><td><strong>App</strong></td><td>POP GUIDE（现场提供登录凭证）</td></tr>
+    <tr><td><strong>取消政策</strong></td><td>5月2日 15:00前可全额退款</td></tr>
+    <tr><td><strong>着装要求</strong></td><td>肩部和膝盖必须遮盖（短裤/吊带不允许入内）</td></tr>
+    <tr><td><strong>周日特别说明</strong></td><td>大教堂周日关闭，<strong>穹顶登顶正常</strong>；3日通票可在其他天参观大教堂</td></tr>
+  </tbody>
+</table>
+
+<h3>⏱️ Day 1 + Day 2 时间线（已确认版）</h3>
+<pre>Day 1 · 5月2日
+  15:45  集合：Uffizi入口（Piazzale degli Uffizi，找紫色旗帜）
+  16:00  Uffizi 入场 → 约17:00 出
+  17:15  出发步行前往Accademia
+  17:30  Accademia 入场窗口开启（17:30-17:45）→ 约18:15 出
+  18:15  领主广场 → 18:45 老桥
+  19:15  米开朗基罗广场（日落）→ 20:30 La Giostra 晚餐
+
+Day 2 · 5月3日
+  09:00  洗礼堂（8:30开门，人最少时段）
+  09:30  Opera del Duomo Museum（45分钟）
+  10:30  领主广场（晨光）
+  12:00  Trattoria Mario 午餐
+  14:45  集合：Duomo Dome（Lindt门口，找白色旗帜）
+  15:00  穹顶登顶 → 约16:30 出
+  16:30  老桥/领主广场（下午光线）
+  17:30  米开朗基罗广场（日落）→ 20:00 La Giostra 晚餐
+  （大教堂周日关闭，5月4日凭3日通票可参观）</pre>
+
+<!-- ==================== 重要注意事项 ==================== -->
+<h2>⚠️ 重要注意事项（出行前必读）</h2>
+
+<h3>🪪 证件 & 租车</h3>
+<div class="card">
+  <ul>
+    <li><strong>驾照到手：</strong>4月22-23日（海牙公证），提前在线锁单预订租车</li>
+    <li><strong>租车公司：</strong>Sixt Italy（口碑好+英文服务）</li>
+    <li><strong>取车地点：</strong>Sixt Firenze City（Via Maso Finiguerre, 24，步行5分钟到SMN火车站，<strong>不在机场</strong>）</li>
+    <li><strong>自驾路线：</strong>强烈推荐走普通公路（SS2 / Via Francigena），穿越托斯卡纳葡萄园+橄榄树林+柏树山丘，风景远胜A1高速</li>
+  </ul>
+</div>
+
+<h4>🚗 佛罗伦萨 → 锡耶纳：普通公路路线（强烈推荐）</h4>
+<blockquote class="tip">
+  第一次来意大利，<strong>强烈建议走 SS2 / Via Francigena</strong>，避免 A1 高速。《托斯卡纳艳阳下》同款风景——延绵葡萄园、橄榄树林、点缀柏树的中世纪小山城。
+</blockquote>
+
+<div class="card">
+  <strong>路线设置方法（Google Maps）：</strong>
+  <ol>
+    <li>输入"佛罗伦萨 - 锡耶纳"</li>
+    <li>点右上角 <strong>三个点 → 路线选项</strong></li>
+    <li>勾选 <strong>"避免高速公路"（Avoid Tolls 也可勾选）</strong></li>
+    <li>开始导航</li>
+  </ol>
+  <strong>自驾建议：</strong>3人轮流开，一人开一段，看风景的看风景，拍照的拍照。
+  <ul>
+    <li><strong>停车（锡耶纳）：</strong>锡耶纳禁止外来车辆进古城，停 <strong>Parcheggio Il Campo</strong>（田野广场地下停车场），€2/小时，步行到广场2分钟</li>
+  </ul>
+  <strong>必备文件：</strong>护照 + 驾照原件 + 海牙认证件 + 预订确认单 + 信用卡（建议全险）
+</div>
+
+<h3>🧳 行李</h3>
+<div class="card">
+  <ul>
+    <li>1件托运行李 + 1件手提行李</li>
+    <li><strong>全黑西装：装行李箱托运，勿随身带上机</strong></li>
+    <li>婚礼当天酒店熨烫后穿（5星酒店通常有熨烫服务，收费€5-15）</li>
+    <li>5月4日行李：提前和酒店前台确认14:00前寄存（免费）</li>
+  </ul>
+</div>
+
+<h3>🇮🇹 意大利实用信息</h3>
+<table>
+  <thead><tr><th>项目</th><th>详情</th></tr></thead>
+  <tbody>
+    <tr><td>时差</td><td>意大利比深圳慢6小时（夏令时 CEST = UTC+2）</td></tr>
+    <tr><td>货币</td><td>欧元（€），Visa/Mastercard备好，小店/小费倾向现金</td></tr>
+    <tr><td>小费</td><td>餐厅通常不需要，服务费已含在账单</td></tr>
+    <tr><td>电压</td><td>230V，意标插座（3圆孔），建议带万能转换插头</td></tr>
+    <tr><td>安全</td><td>佛罗伦萨/罗马小偷多，护照贴身，背包朝前</td></tr>
+    <tr><td>着装</td><td>进入教堂需遮肩盖膝，随身带外套</td></tr>
+    <tr><td>网络</td><td>开通境外漫游（移动约¥30/天封顶），或买意大利电话卡</td></tr>
+  </tbody>
+</table>
+
+<!-- ==================== 行程总览 ==================== -->
+<h2>📋 行程总览</h2>
+<table>
+  <thead><tr><th>日期</th><th>星期</th><th>主题</th><th>住宿</th><th>核心事件</th></tr></thead>
+  <tbody>
+    <tr><td>5月2日</td><td>六</td><td>深圳 → 米兰 → 佛罗伦萨</td><td>佛罗伦萨</td><td><strong>Uffizi + Accademia大卫</strong></td></tr>
+    <tr><td>5月3日</td><td>日</td><td>佛罗伦萨深度游</td><td>佛罗伦萨</td><td>洗礼堂 + 穹顶登顶</td></tr>
+    <tr><td>5月4日</td><td>一</td><td>佛罗伦萨 → 锡耶纳</td><td>锡耶纳</td><td>取车 · 彩排</td></tr>
+    <tr><td>5月5日</td><td>二</td><td><strong>婚礼日</strong> · Villa di Geggiano</td><td>锡耶纳</td><td>伴郎</td></tr>
+    <tr><td>5月6日</td><td>三</td><td>锡耶纳 → 罗马</td><td>罗马</td><td>斗兽场 · 梵蒂冈 · 购物</td></tr>
+    <tr><td>5月7日</td><td>四</td><td>罗马 → 深圳</td><td>—</td><td class="priority-red">🔴返程日期待确认</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">⚠️ <strong>Rome返程日期可能从5月7日推迟至5月8日</strong>，影响Rome酒店晚数和行程节奏，出发前务必确认。</blockquote>
+
+<!-- ==================== DAY 1 ==================== -->
+<h2>📅 每日详细行程</h2>
+<hr>
+
+<h2>DAY 1 · 5月2日 · 双馆日（密集行程）</h2>
+
+<div class="card alert">
+  <strong>今日主题：</strong>落地 → 高铁 → Uffizi → Accademia大卫 → 夕阳<br>
+  ⚠️ <strong>今日为双馆日，节奏紧凑，请穿暴走鞋，避开大件行李</strong>
+</div>
+
+<h3>🛬 深圳 SZX → 米兰 MXP</h3>
+<table>
+  <tbody>
+    <tr><td><strong>航班</strong></td><td>HU7973 · 海南航空 · 波音787</td></tr>
+    <tr><td><strong>出发</strong></td><td>深圳 01:50（CST）</td></tr>
+    <tr><td><strong>到达</strong></td><td>米兰马尔彭萨 MXP <strong>08:20</strong>（当地时间，CEST = UTC+2）</td></tr>
+    <tr><td><strong>座位</strong></td><td>31K（走廊位）</td></tr>
+    <tr><td><strong>飞行时长</strong></td><td>12小时30分</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">⚠️ <strong>落地流程（预留1.5-2小时）</strong><br>MXP落地 → 护照检查（non-EU通道）→ 行李提取 → 海关 → 出口</blockquote>
+
+<h3>🚄 MXP → 米兰中央车站</h3>
+<div class="card">
+  <ul>
+    <li><strong>Malpensa Express</strong> 直达，约52分钟，€13-18</li>
+    <li>出境后到 T1 航站楼地下乘火车，到 <strong>Milano Porta Garibaldi</strong> 站</li>
+  </ul>
+</div>
+
+<h3>🚄 米兰中央车站 → 佛罗伦萨</h3>
+<table>
+  <tbody>
+    <tr><td><strong>列车号</strong></td><td>9935</td></tr>
+    <tr><td><strong>出发</strong></td><td>Milano Centrale <strong>12:40</strong></td></tr>
+    <tr><td><strong>到达</strong></td><td>Firenze SMN <strong>14:35</strong></td></tr>
+    <tr><td><strong>时长</strong></td><td>约1小时55分</td></tr>
+    <tr><td><strong>舱位</strong></td><td>Prima Business（商务座）</td></tr>
+    <tr><td><strong>车厢/座位</strong></td><td>3号车厢 / 7号座位</td></tr>
+    <tr><td><strong>车票代码</strong></td><td>XFSWPJ</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">⚠️ <strong>关键风险：</strong>如果MXP出关+行李超过1小时则赶不上12:40。<br><strong>备用方案：</strong>当天14:40/15:40后续班次，无需改签，提前15分钟到站重新刷票入站。</blockquote>
+
+<h3>🏨 抵达佛罗伦萨</h3>
+<div class="card">
+  <ul>
+    <li>Firenze SMN 步行10分钟到 Duomo 区域（Calzaiuoli步行街）</li>
+    <li>入住酒店，<strong>精简行李</strong>，休整至 <strong>15:45</strong></li>
+  </ul>
+</div>
+
+<h3>🎨 16:00 · Uffizi 美术馆（已含中文语音导览）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>入场时间</strong></td><td><strong>16:00</strong></td></tr>
+    <tr><td><strong>集合时间</strong></td><td><strong>15:45</strong>（提前15分钟到）</td></tr>
+    <tr><td><strong>集合地点</strong></td><td>Piazzale degli Uffizi, 5（多纳泰罗雕像下方，持<strong>紫色旗帜</strong>的Crown Tours工作人员）</td></tr>
+    <tr><td><strong>订单号</strong></td><td><strong>GYGMX4L557XF</strong></td></tr>
+    <tr><td><strong>金额</strong></td><td>$70.80 USD（2人）</td></tr>
+    <tr><td><strong>语言</strong></td><td>中文语音导览</td></tr>
+    <tr><td><strong>游览时长</strong></td><td>约1小时（精华压缩版）</td></tr>
+    <tr><td><strong>游览内容</strong></td><td>波提切利厅 + 达芬奇厅 + 拉斐尔厅 + 提香厅</td></tr>
+    <tr><td><strong>App下载</strong></td><td>pg.unlockmy.app/NvkebGXZr2eiK3ga7</td></tr>
+    <tr><td><strong>App用户名</strong></td><td>BGA-000232</td></tr>
+    <tr><td><strong>App密码</strong></td><td>18910</td></tr>
+    <tr><td><strong>取消政策</strong></td><td><strong>5月1日 16:00前可全额退款</strong></td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">
+  ⚠️ <strong>此票仅含 Uffizi 入场，不含 Accademia。</strong> Accademia 大卫票（€48，订单号3930483）为单独购票，17:30入场，两者分开。<br>
+  ⚠️ 艺术馆内无网络，<strong>务必提前下载好语音导览App</strong>。<br>
+  ⚠️ 今日为双馆日，Uffizi控制在1小时，只看精华四厅，17:00出馆后步行前往Accademia。
+</blockquote>
+
+<h3>🎨 17:30 · Accademia Gallery（大卫真迹，已购票）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>入场窗口</strong></td><td><strong>17:30 - 17:45</strong>（这个时间段内入场即可）</td></tr>
+    <tr><td><strong>游览时长</strong></td><td>约45分钟</td></tr>
+    <tr><td><strong>游览内容</strong></td><td>大卫雕像真迹（主厅）+ 囚犯雕像 + 圣殇</td></tr>
+    <tr><td><strong>订单号</strong></td><td><strong>22534267</strong>（GetYourGuide）</td></tr>
+    <tr><td><strong>持票人</strong></td><td>ZHEN WANG（€24） + WEIMING LONG（€24）= 合计<strong>€48</strong></td></tr>
+    <tr><td><strong>地址</strong></td><td>Via Riasoli, 60（从Uffizi步行约15分钟）</td></tr>
+  </tbody>
+</table>
+<blockquote class="tip">
+  💡 从Uffizi出来，沿Via dei Calzaiuoli往北走到Duomo，再沿Via del Corso步行约10分钟到Accademia。<br>
+  <strong>17:15出发</strong>，预留15分钟步行时间。<br>
+  💡 Accademia看完真迹后，去领主广场可以看大卫<strong>青铜复制品</strong>，真迹+复制品对比很有意思。
+</blockquote>
+
+<h3>🌅 领主广场 / 老桥 / 米开朗基罗广场 / 晚餐</h3>
+<table>
+  <thead><tr><th>时间</th><th>地点</th><th>游览时长</th><th>备注</th></tr></thead>
+  <tbody>
+    <tr><td>18:15</td><td>领主广场（Piazza della Signoria）</td><td>约30分钟</td><td>大卫青铜复制品 + 佣兵凉廊（旧宫外观）</td></tr>
+    <tr><td>18:45</td><td>老桥（Ponte Vecchio）</td><td>约15分钟拍照</td><td>金器店走廊亮灯，傍晚氛围最佳</td></tr>
+    <tr><td>19:15</td><td>米开朗基罗广场（日落）</td><td>30-45分钟</td><td>打车€15上广场；5月日落约19:45</td></tr>
+    <tr><td>20:30</td><td>晚餐：La Giostra（Via Ricasoli, 28）</td><td>—</td><td>⭐ 必须提前预约；必点：Tagliatelle al Tartufo</td></tr>
+  </tbody>
+</table>
+
+<!-- ==================== DAY 2 ==================== -->
+<hr>
+<h2>DAY 2 · 5月3日 · 佛罗伦萨深度游（核心日）</h2>
+
+<div class="card alert">
+  <strong>今日主题：</strong>洗礼堂 → 博物馆 → 皮具市场 → 穹顶登顶<br>
+  ⚠️ <strong>周日特别提醒：</strong>大教堂全天关闭（但穹顶正常）+ 洗礼堂/博物馆13:00-14:00闭馆，<strong>上午全部参观完毕</strong>
+</div>
+
+<h3>⏰ 推荐时间线</h3>
+<pre>09:00  洗礼堂（Duomo广场北侧，8:30开门，20分钟）
+09:30  Opera del Duomo Museum（45分钟，10:15前出）
+09:45  Piazza della Signoria（领主广场，晨光柔和，30分钟）
+10:30  Mercato San Lorenzo（皮具市场，1小时）
+11:30  闲逛/咖啡休整
+12:00  Trattoria Mario 午餐
+13:00  消化休整（避暑+留体力爬穹顶）
+14:45  Duomo Dome 集合点（Piazza del Duomo, 15R，Lindt门口）
+15:00  Duomo Dome 登顶（已购票）
+16:30  领主广场 + 老桥（下午光线）
+17:30  米开朗基罗广场（日落）
+20:00  La Giostra 晚餐（已预约）</pre>
+
+<h3>🏛️ 洗礼堂 / Opera del Duomo Museum / 领主广场</h3>
+<table>
+  <thead><tr><th>地点</th><th>费用</th><th>开放时间</th><th>游览时长</th><th>亮点</th></tr></thead>
+  <tbody>
+    <tr><td>洗礼堂（Battistero）</td><td>含Duomo Pass</td><td>8:30开门</td><td>20-30分钟</td><td>8面金色马赛克穹顶，"天堂之门"铜雕洗礼门</td></tr>
+    <tr><td>Opera del Duomo Museum</td><td>含Duomo Pass</td><td>—</td><td>45分钟</td><td>布鲁内莱斯基穹顶原始模型、米开朗基罗《怜悯》雕像</td></tr>
+    <tr><td>领主广场</td><td>免费</td><td>全天</td><td>30分钟</td><td>大卫青铜复制品（晨光拍照效果好）</td></tr>
+  </tbody>
+</table>
+
+<h3>🛍️ Mercato di San Lorenzo（圣洛伦索市场）</h3>
+<div class="card">
+  <ul>
+    <li><strong>位置：</strong>Via dell'Anguillo，Duomo广场西侧</li>
+    <li><strong>类型：</strong>佛罗伦萨最著名的皮具+集市</li>
+    <li><strong>游览时长：</strong>1小时（逛+挑礼物）</li>
+    <li><strong>伴郎礼物建议：</strong>皮手套（€30-50）、皮带（€25-40）、卡包（€30-60）</li>
+  </ul>
+</div>
+<blockquote class="warning">⚠️ <strong>小偷重灾区：</strong>背包朝前，护照不随身，只带当天需要的现金+一张卡。</blockquote>
+
+<h3>🍽️ 午餐：Trattoria Mario（Via Rosina, 2）</h3>
+<div class="card">
+  <ul>
+    <li><strong>风格：</strong>传统佛罗伦萨家常菜，当地人首选，无预约</li>
+    <li><strong>预算：</strong>€20-30/人</li>
+    <li><strong>必点：</strong>Bistecca alla Fiorentina（佛罗伦萨大牛排，<strong>1公斤起点</strong>）+ Lampredotto（牛肚包）</li>
+  </ul>
+</div>
+<blockquote class="info">⏰ <strong>11:30开始营业，12:00前进门可以避开高峰</strong>，12:00后排队30分钟+</blockquote>
+
+<h3>🏆 Duomo Dome 登顶 + 大教堂通票（Nicom Tours · 已确认）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>集合时间</strong></td><td><strong>14:45</strong>（必须提前到）</td></tr>
+    <tr><td><strong>集合地点</strong></td><td>Piazza del Duomo, 15R（Duomo左侧<strong>Lindt巧克力店门口</strong>）</td></tr>
+    <tr><td><strong>接站标识</strong></td><td>持<strong>白色旗帜</strong>，Nicom Tours 工作人员</td></tr>
+    <tr><td><strong>订单号</strong></td><td><strong>GYGKBGGA7RWR</strong></td></tr>
+    <tr><td><strong>入场PIN码</strong></td><td><strong>LjLh/D6W</strong></td></tr>
+    <tr><td><strong>金额</strong></td><td>$176.76 USD（2人）</td></tr>
+    <tr><td><strong>语言</strong></td><td>英语</td></tr>
+    <tr><td><strong>入场时间</strong></td><td><strong>15:00</strong></td></tr>
+    <tr><td><strong>通期</strong></td><td>3日通票（洗礼堂/博物馆/钟楼均含）</td></tr>
+    <tr><td><strong>高度/台阶</strong></td><td>116米，<strong>463级台阶，无电梯</strong></td></tr>
+    <tr><td><strong>App</strong></td><td>POP GUIDE（现场提供登录凭证）</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">
+  ⚠️ <strong>安全检查需15-30分钟</strong>，14:45到时间刚好，不要迟到。<br>
+  ⚠️ <strong>穹顶463级台阶，无电梯</strong>，需一定体力；今日只登穹顶，不登钟楼（穹顶视角已覆盖，省体力）。<br>
+  ⚠️ <strong>着装要求严格：肩部和膝盖必须遮盖</strong>（短裤/吊带/无袖不允许入内）。<br>
+  ⚠️ <strong>5月3日周日：大教堂关闭，但穹顶登顶正常。</strong>
+</blockquote>
+
+<!-- ==================== DAY 3 ==================== -->
+<hr>
+<h2>DAY 3 · 5月4日 · 佛罗伦萨 → 锡耶纳</h2>
+
+<div class="card success">
+  <strong>今日主题：</strong>取车 → 接朋友Sean → 托斯卡纳自驾 → 婚礼彩排
+</div>
+
+<h3>🛫 第三位朋友（Sean）航班信息</h3>
+<table>
+  <tbody>
+    <tr><td><strong>航班</strong></td><td>AF 63（纽瓦克→巴黎）+ AF 1066（巴黎→佛罗伦萨）</td></tr>
+    <tr><td><strong>出发</strong></td><td>5月3日 17:00 纽瓦克 EWR</td></tr>
+    <tr><td><strong>中转</strong></td><td>5月4日 06:10 巴黎 CDG（转机约1小时）</td></tr>
+    <tr><td><strong>到达</strong></td><td><strong>5月4日 08:55 佛罗伦萨 FLR（佩雷托拉机场）</strong></td></tr>
+    <tr><td><strong>接机人</strong></td><td>Joe（持护照+驾照，提前到机场等候）</td></tr>
+  </tbody>
+</table>
+
+<h3>⏱️ 完整时间线</h3>
+<pre>09:00  Sixt Florence City 取车（Via Maso Finiguerre, 24）
+09:30  取完车，开往 FLR 机场（约15-20分钟）
+09:45  FLR 机场停车场等候
+10:15  朋友出机场，上车出发
+12:00  到锡耶纳，吃午餐（Piazza del Campo 周边）
+13:00  Torre del Mangia 登顶（约1小时）
+14:00  Piazza del Campo（田野广场）+ Duomo di Siena
+14:30  出发去 Villa di Geggiano（约15分钟车程）
+14:45  抵达 Villa，安顿行李
+16:00  婚礼彩排开始（Rehearsal + Rehearsal Dinner）</pre>
+
+<h3>🚗 Sixt Firenze City 取车（09:00）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>时间</strong></td><td>09:00</td></tr>
+    <tr><td><strong>地址</strong></td><td>Via Maso Finiguerre, 24（步行5分钟到SMN火车站）</td></tr>
+    <tr><td><strong>必备文件</strong></td><td>护照 + 驾照原件 + 海牙认证件 + 预订确认单 + 信用卡</td></tr>
+    <tr><td><strong>建议</strong></td><td>购买全险（CDW + Theft Protection），意大利修车贵，全险必买</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">⚠️ <strong>附加驾驶员提醒：</strong>Sean如有驾照，取车时一并加为附加驾驶员（€10-15/天），意大利租车<strong>所有驾驶人证件必须齐全</strong>，否则保险不覆盖。</blockquote>
+
+<h3>🛬 FLR 机场接朋友（10:15）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>航班到达</strong></td><td><strong>08:55 佛罗伦萨佩雷托拉机场 FLR</strong></td></tr>
+    <tr><td><strong>Joe到达机场</strong></td><td><strong>09:45</strong>（预留充足时间）</td></tr>
+    <tr><td><strong>接机地点</strong></td><td>FLR 到达出口</td></tr>
+    <tr><td><strong>接机准备</strong></td><td>持护照在到达出口等候，举牌或电话联系</td></tr>
+  </tbody>
+</table>
+
+<h3>🛣️ 佛罗伦萨 → 锡耶纳（自驾）</h3>
+<blockquote class="tip">💡 <strong>强烈推荐走普通公路（SS2 / Via Francigena）</strong>，避免A1高速。延绵葡萄园、橄榄树林、柏树点缀的中世纪小山城——《托斯卡纳艳阳下》同款风景，Google Maps勾选"避免高速公路"即可。</blockquote>
+<table>
+  <tbody>
+    <tr><td><strong>出发时间</strong></td><td><strong>10:15 出发</strong></td></tr>
+    <tr><td><strong>路线</strong></td><td><strong>普通公路 SS2 / Via Francigena</strong>（约1小时30分钟）</td></tr>
+    <tr><td><strong>停车（锡耶纳）</strong></td><td>停 <strong>Parcheggio Il Campo</strong>（田野广场地下停车场），€2/小时，步行到广场2分钟</td></tr>
+    <tr><td><strong>午餐</strong></td><td>12:00前后，Piazza del Campo 周边选择多</td></tr>
+  </tbody>
+</table>
+
+<h3>🏛️ 锡耶纳半日游</h3>
+<table>
+  <thead><tr><th>地点</th><th>建议时间</th><th>亮点</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Torre del Mangia（曼贾塔楼）</strong></td><td>约1小时（登顶爬300+阶）</td><td>俯瞰古城+托斯卡纳山丘，强烈推荐</td></tr>
+    <tr><td><strong>Piazza del Campo（田野广场）</strong></td><td>30分钟</td><td>九月赛马节Palio举办地，坐在台阶上喝咖啡</td></tr>
+    <tr><td><strong>Duomo di Siena（锡耶纳主教堂）</strong></td><td>45分钟</td><td>白色+绿色条纹大理石，意大利最美教堂之一</td></tr>
+  </tbody>
+</table>
+<blockquote class="tip">💡 建议顺序：先登曼贾塔楼（体力最好时），下来后田野广场喝咖啡，最后参观主教堂。</blockquote>
+
+<h3>🚗 去 Villa di Geggiano</h3>
+<table>
+  <thead><tr><th>时间</th><th>活动</th><th>备注</th></tr></thead>
+  <tbody>
+    <tr><td><strong>14:30</strong></td><td>出发去 Villa di Geggiano</td><td>约15分钟车程，山区信号差</td></tr>
+    <tr><td><strong>14:45</strong></td><td>抵达 Villa，安顿行李</td><td>提前下载<strong>离线地图</strong></td></tr>
+  </tbody>
+</table>
+<blockquote class="info">📍 Villa di Geggiano 地址：S.P. 100 di Geggiano, 5 — 53011 Geggiano (SI), Tuscany, Italy<br>⚠️ 山区GPS信号不稳定，<strong>务必提前下载离线地图</strong>。</blockquote>
+
+<h3>💒 婚礼彩排（Rehearsal Dinner）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>时间</strong></td><td>约 <strong>16:00-20:00</strong>（⚠️ 彩排可能16:00就开始）</td></tr>
+    <tr><td><strong>地点</strong></td><td><strong>Villa di Geggiano</strong></td></tr>
+    <tr><td><strong>身份</strong></td><td>伴郎（Best Man）</td></tr>
+    <tr><td><strong>着装</strong></td><td>Smart Casual（不用穿全套西装，除非另行通知）</td></tr>
+    <tr><td><strong>内容</strong></td><td>流程彩排 + 彩排晚宴（Rehearsal Dinner）</td></tr>
+    <tr><td><strong>职责</strong></td><td>致辞顺序确认 + 婚礼当天迎宾引导</td></tr>
+  </tbody>
+</table>
+
+<!-- ==================== DAY 4 ==================== -->
+<hr>
+<h2>DAY 4 · 5月5日 · 婚礼日</h2>
+
+<div class="card success">
+  <strong>今日主题：</strong>Villa di Geggiano 全天 · 伴郎身份
+</div>
+
+<h3>📋 婚礼日参考时间线（以Villa官方通知为准）</h3>
+<table>
+  <thead><tr><th>时间</th><th>活动</th></tr></thead>
+  <tbody>
+    <tr><td>上午</td><td>新郎团 Preparation + 拍照（Getting Ready）</td></tr>
+    <tr><td>14:00前</td><td>抵达 Villa di Geggiano</td></tr>
+    <tr><td>14:00-15:00</td><td>新郎团最后准备</td></tr>
+    <tr><td>15:00-16:00</td><td>宾客到达 + Welcome Drink</td></tr>
+    <tr><td>16:00-17:00</td><td>婚礼仪式（Villa花园）</td></tr>
+    <tr><td>17:00-18:00</td><td>Cocktail Hour（香槟+小吃+拍照）</td></tr>
+    <tr><td>18:00-19:00</td><td>休息/换装</td></tr>
+    <tr><td>19:00-23:00</td><td>晚宴 + 派对</td></tr>
+  </tbody>
+</table>
+
+<h3>👔 伴郎 Dress Code（全黑）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>颜色</strong></td><td>纯黑色（Suit + Shirt + Tie）</td></tr>
+    <tr><td><strong>与新郎区分</strong></td><td>新郎可能深色（Tuxedo Navy/Charcoal），伴郎为纯黑</td></tr>
+    <tr><td><strong>鞋子</strong></td><td>黑色正装皮鞋（Oxford/Blucher）</td></tr>
+    <tr><td><strong>配饰</strong></td><td>黑色口袋方巾（可选）+ 黑色领结（<strong>是Bow Tie还是Ascot待确认</strong>）</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">⚠️ 建议出发前1天和新人确认 Dress Code 细节，避免颜色冲突。<br>西装到酒店后立即熨烫（酒店熨烫服务，或自己带手持熨斗）。</blockquote>
+
+<h3>💐 伴郎职责（Best Man Duties）</h3>
+<div class="card">
+  <ol>
+    <li><strong>迎宾</strong> — 引导宾客入座，特别是长辈和重要亲戚</li>
+    <li><strong>致辞</strong> — 晚宴时代表伴郎团发言（通常3-5分钟，内容：感恩+祝福+回忆趣事）</li>
+    <li><strong>交戒指</strong> — 仪式环节将戒指交予新郎（等牧师/主持人提示）</li>
+    <li><strong>协调</strong> — 协助新人处理当天临时事项</li>
+    <li><strong>气氛</strong> — 带动现场氛围（新郎朋友闹腾，注意分寸）</li>
+  </ol>
+</div>
+<blockquote class="success">⭐ <strong>重要：致辞提前准备！</strong> 建议现在就想好框架，到时候就不会紧张。</blockquote>
+
+<!-- ==================== DAY 5 ==================== -->
+<hr>
+<h2>DAY 5 · 5月6日 · 锡耶纳 → 罗马</h2>
+
+<div class="card alert">
+  <strong>今日主题：</strong>托斯卡纳自驾 → Buccellati购物 → 斗兽场 → 梵蒂冈双杀<br>
+  ⚠️ <strong>门票预约须匹配：斗兽场13:00入场 + 梵蒂冈16:00入场</strong>
+</div>
+
+<h3>⏰ 完整时间线</h3>
+<pre>08:00  锡耶纳退房，出发
+10:30  抵达罗马，还车（Sixt Rome Downtown）
+11:00  Buccellati（Via dei Condotti 31）— 给Reincy的惊喜礼物
+12:00  午餐（Via dei Condotti附近，简单解决）
+13:00  Colosseum（斗兽场）入场
+15:00  出斗兽场，步行至地铁站
+15:30  Metro B → A 换乘（Colosseo → Termini → Ottaviano）
+16:00  梵蒂冈博物馆入场
+18:00  出馆，圣彼得大教堂（外观）
+18:30  万神殿（日落前，光线最美）
+19:15  特莱维喷泉
+19:45  西班牙广场
+20:30  回酒店</pre>
+
+<h3>🛣️ 上午：锡耶纳 → 罗马（自驾）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>建议出发时间</strong></td><td><strong>08:00</strong></td></tr>
+    <tr><td><strong>路线</strong></td><td>A1高速，约2小时30分 - 3小时（含进城交通）</td></tr>
+    <tr><td><strong>高速费</strong></td><td>约€20-25</td></tr>
+    <tr><td><strong>还车地点</strong></td><td>Sixt Rome Downtown（靠近梵蒂冈区域）</td></tr>
+    <tr><td><strong>建议到市区时间</strong></td><td>10:30前</td></tr>
+  </tbody>
+</table>
+
+<h3>💍 11:00 · Buccellati（Via dei Condotti 31）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>地址</strong></td><td>Via dei Condotti, 31, Roma</td></tr>
+    <tr><td><strong>营业时间</strong></td><td>周一至六 10:30-19:00</td></tr>
+    <tr><td><strong>产品</strong></td><td>Eternelle Blossoms Diamonds Margherita（银镶钻雏菊）</td></tr>
+    <tr><td><strong>价格</strong></td><td>€630 → 退税后约€548（≈¥4,300）</td></tr>
+    <tr><td><strong>Reincy戒指尺寸</strong></td><td>EU 52-53</td></tr>
+  </tbody>
+</table>
+<blockquote class="tip">💡 <strong>邮件询货优先：</strong>先发Buccellati+Beccacece两封邮件，确认有货再去。<br>如Buccellati无货，备用：<strong>Beccacece Gioielli</strong>（Piazza del Parlamento, 35，步行5分钟）</blockquote>
+
+<h3>🏛️ 13:00 · Colosseum（斗兽场）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>订票官网</strong></td><td>ticketing.colosseo.it</td></tr>
+    <tr><td><strong>票价</strong></td><td>标准票 €18/人（含罗马广场+帕拉蒂尼山，24小时有效）</td></tr>
+    <tr><td><strong>预约时间</strong></td><td><strong>13:00入场</strong></td></tr>
+    <tr><td><strong>游览时长</strong></td><td>约1.5小时</td></tr>
+    <tr><td><strong>最后入场</strong></td><td>18:15（闭馆19:15）</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">⚠️ <strong>5月旺季必须提前订！</strong> 票提前30天放票，热门时间段可能已售罄。</blockquote>
+
+<h3>🚇 交通：Colosseum → Vatican</h3>
+<div class="card">
+  <ol>
+    <li>15:00 出Colosseo，步行5分钟到 Colosseo 地铁站（B线）</li>
+    <li>Metro B线：Colosseo → Termini（4站，约8分钟）</li>
+    <li>Termini 站内换乘（步行约10分钟，含等车）</li>
+    <li>Metro A线：Termini → Ottaviano（7站，约12分钟）</li>
+    <li>16:00 步行10分钟到梵蒂冈入口</li>
+  </ol>
+</div>
+<blockquote class="info">💡 <strong>ROMA PASS 建议：</strong>€7.5/24h，含地铁+部分景点优惠</blockquote>
+
+<h3>🇻🇦 16:00 · Vatican Museums（梵蒂冈博物馆）</h3>
+<table>
+  <tbody>
+    <tr><td><strong>订票官网</strong></td><td>tickets.museivaticani.va</td></tr>
+    <tr><td><strong>票价</strong></td><td>标准票 €25/人（€20门票 + €5预约费）</td></tr>
+    <tr><td><strong>预约时间</strong></td><td><strong>16:00入场</strong></td></tr>
+    <tr><td><strong>游览时长</strong></td><td>约2小时（涵盖西斯廷教堂）</td></tr>
+    <tr><td><strong>游览亮点</strong></td><td>西斯廷教堂（天花壁画）+ 拉斐尔房间 + 希腊十字大厅</td></tr>
+    <tr><td><strong>最后入场</strong></td><td><strong>17:00</strong>（周三特殊）</td></tr>
+    <tr><td><strong>闭馆时间</strong></td><td><strong>19:00</strong>（周三）</td></tr>
+  </tbody>
+</table>
+<blockquote class="warning">⚠️ 官网普通票可选16:00场次；Guided Tour（导览团）最晚14:00，<strong>不要混淆两种票</strong>。<br>如官网打不开（需VPN），可通过 GetYourGuide / Viator 代订。</blockquote>
+
+<h3>🌙 傍晚/晚上：罗马三件套</h3>
+<table>
+  <thead><tr><th>时间</th><th>地点</th><th>游览时长</th><th>备注</th></tr></thead>
+  <tbody>
+    <tr><td>18:30</td><td>Pantheon（万神殿）</td><td>20-30分钟</td><td><strong>€5门票，需提前coopculture.it预约</strong>，日落前光线最美</td></tr>
+    <tr><td>19:15</td><td>Trevi Fountain（特莱维喷泉）</td><td>15-20分钟</td><td>免费，投€1许愿</td></tr>
+    <tr><td>19:45</td><td>Spanish Steps（西班牙广场）</td><td>15-20分钟</td><td>坐在台阶上喝咖啡收尾</td></tr>
+  </tbody>
+</table>
+<blockquote class="tip">⭐ 万神殿距特莱维喷泉步行10分钟，距西班牙广场步行5分钟，路线顺畅。</blockquote>
+
+<!-- ==================== DAY 6 ==================== -->
+<hr>
+<h2>DAY 6 · 5月7日 · 返程日（🔴返程日期待确认）</h2>
+
+<div class="card alert">
+  <strong>今日主题：</strong>罗马 → 深圳<br>
+  ⚠️ <strong>🔴 返程日期可能推迟至5月8日，最终确认前按5月7日安排，如推迟需调整罗马酒店晚数</strong>
+</div>
+
+<h3>🛫 出发前准备</h3>
+<table>
+  <tbody>
+    <tr><td><strong>建议到机场时间</strong></td><td>09:30前（11:15航班，FCO机场大，提前90分钟到登机口）</td></tr>
+    <tr><td><strong>行李</strong></td><td>提前称重，托运行李<strong>23kg以内</strong>（海南航空经济舱标准）</td></tr>
+    <tr><td><strong>护照检查</strong></td><td>非欧盟出发，往中国方向，在FCO T3航站楼</td></tr>
+    <tr><td><strong>退税</strong></td><td>如有购物，T3有Tax Free柜台（需要护照+机票+商品+发票）</td></tr>
+  </tbody>
+</table>
+
+<h3>✈️ 航班信息</h3>
+<table>
+  <tbody>
+    <tr><td><strong>航班</strong></td><td>HU438 · 海南航空 · 波音787</td></tr>
+    <tr><td><strong>出发</strong></td><td>罗马菲乌米奇诺 FCO <strong>11:15</strong>（当地时间）</td></tr>
+    <tr><td><strong>到达</strong></td><td>深圳 <strong>05:00+1</strong>（5月8日凌晨当地时间）</td></tr>
+    <tr><td><strong>飞行时长</strong></td><td>11小时45分</td></tr>
+    <tr><td><strong>座位</strong></td><td><strong>待确认</strong></td></tr>
+  </tbody>
+</table>
+<blockquote class="info">⚠️ 到达深圳是<strong>5月8日凌晨05:00</strong>，不是5月7日。</blockquote>
+
+<h3>🛍️ FCO T3 机场购物提示</h3>
+<div class="card">
+  <ul>
+    <li>FCO T3 是欧洲大型枢纽免税店，品牌齐全</li>
+    <li>奢侈品：LV、Gucci、Prada、Bottega Veneta 均有，比市区便宜约15-20%</li>
+    <li>非欧盟居民可退约12-15%的VAT，实际到手价约为中国售价的5-6折</li>
+  </ul>
+</div>
+
+<!-- ==================== 酒店备忘 ==================== -->
+<h2>🏨 酒店备忘</h2>
+<table>
+  <thead><tr><th>城市</th><th>日期</th><th>晚数</th><th>预算</th><th>状态</th><th>推荐</th></tr></thead>
+  <tbody>
+    <tr><td>佛罗伦萨</td><td>5月2-4日</td><td>2晚</td><td>¥4,000-5,000/2晚</td><td class="priority-orange">🟡 待确认</td><td>Hotel Calzaiuoli / Davanzati / Grand Hotel Cavour</td></tr>
+    <tr><td>锡耶纳</td><td>5月4-6日</td><td>2晚</td><td>—</td><td class="confirmed">🟢 伴郎安排</td><td>Villa内或周边</td></tr>
+    <tr><td>罗马</td><td>5月6-7日或5月6-8日</td><td>1-2晚</td><td>¥1,500-2,500/晚</td><td class="priority-red">🔴 待确认</td><td>西班牙广场/纳沃纳广场附近</td></tr>
+  </tbody>
+</table>
+
+<!-- ==================== 出行清单 ==================== -->
+<h2>🎒 出行清单</h2>
+
+<h3>证件类</h3>
+<div class="card">
+  <ul>
+    <li>☐ 护照（有效期超过6个月）</li>
+    <li>☐ 驾照原件 + 海牙认证件（4月22-23日到）</li>
+    <li>☐ 机票行程单（打印+手机存PDF）</li>
+    <li>☐ 酒店预订确认单</li>
+    <li>☐ 租车预订确认单</li>
+    <li>☐ 婚礼邀请函/确认函</li>
+    <li>☐ 旅行保险单</li>
+    <li>☐ Uffizi 门票截图（订单号<strong>GYGMX4L557XF</strong>，Crown Tours）</li>
+    <li>☐ Uffizi 中文导览App下载（用户名BGA-000232 / 密码18910）</li>
+    <li>☐ Accademia 门票截图（订单号<strong>22534267</strong>，GetYourGuide）</li>
+    <li>☐ Duomo Dome + 大教堂通票截图（订单号<strong>GYGKBGGA7RWR</strong>，PIN码<strong>LjLh/D6W</strong>，Nicom Tours）</li>
+    <li>☐ Colosseum 门票确认截图（<strong>待订</strong>）</li>
+    <li>☐ Vatican 门票确认截图（<strong>待订</strong>）</li>
+    <li>☐ 万神殿门票确认截图（<strong>待订</strong>）</li>
+  </ul>
+</div>
+
+<h3>财务类</h3>
+<div class="card">
+  <ul>
+    <li>☐ 欧元现金€300-500</li>
+    <li>☐ Visa/Mastercard（全币种，<strong>通知银行境外用卡</strong>）</li>
+    <li>☐ 信用卡（租车押金预授权）</li>
+  </ul>
+</div>
+
+<h3>行李类</h3>
+<div class="card">
+  <ul>
+    <li>☐ 1件托运行李（<strong>西装保护袋</strong>建议带）</li>
+    <li>☐ 1件手提行李</li>
+    <li>☐ 全黑西装套装（西装+衬衫+领带+口袋方巾）→ <strong>托运行李，勿随身带上机</strong></li>
+    <li>☐ 黑色正装皮鞋</li>
+    <li>☐ 软底暴走鞋（Day 1/2 穿，双馆日+暴走日必备）</li>
+    <li>☐ 万能转换插头（意标/欧标）</li>
+    <li>☐ 充电宝（随身，飞机限带2个合计100Wh以下）</li>
+    <li>☐ 常用药品（感冒药/肠胃药/创可贴）</li>
+    <li>☐ 雨伞（5月托斯卡纳可能有阵雨）</li>
+    <li>☐ 衣物除皱喷雾（备用）</li>
+  </ul>
+</div>
+
+<h3>电子类</h3>
+<div class="card">
+  <ul>
+    <li>☐ 手机 + 意大利电话卡（<strong>或开通境外漫游</strong>，移动约¥30/天封顶）</li>
+    <li>☐ Google Maps离线地图下载（<strong>含Villa周边</strong>）</li>
+    <li>☐ Google Translate（中意翻译，拍照翻译功能很有用）</li>
+    <li>☐ <strong>Uffizi 中文导览App</strong>（pg.unlockmy.app/NvkebGXZr2eiK3ga7，用户名BGA-000232 / 密码18910，<strong>出发前必下！馆内无网</strong>）</li>
+    <li>☐ <strong>POP GUIDE App</strong>（Duomo Dome语音导览，现场提供登录凭证）</li>
+  </ul>
+</div>
+
+<!-- ==================== 风险与应对 ==================== -->
+<h2>⚠️ 风险 & 应对</h2>
+<table>
+  <thead><tr><th>风险</th><th>应对</th></tr></thead>
+  <tbody>
+    <tr><td class="priority-red">🔴 Rome返程日期未确认</td><td>出发前联系海航确认，可能从5月7日推迟至5月8日</td></tr>
+    <tr><td class="priority-red">Colosseum/Vatican票售罄</td><td>立即去官网查余票；可走GetYouGuide/Viator代订</td></tr>
+    <tr><td class="priority-orange">航班延误（Day 1赶火车）</td><td>提前到MXP留足2小时；备用14:40/15:40火车方案</td></tr>
+    <tr><td class="priority-orange">Day 1双馆节奏紧凑</td><td>穿暴走鞋，Uffizi控制在1小时精华四厅</td></tr>
+    <tr><td>大教堂周日不开放</td><td>5月3日是周日，穹顶登顶正常，大教堂关闭</td></tr>
+    <tr><td>洗礼堂/博物馆周日闭馆</td><td>周日13:00-14:00，建议上午全部参观完毕</td></tr>
+    <tr><td>意大利小偷</td><td>背包朝前，护照贴身，不要在景点附近拿钱包</td></tr>
+    <tr><td>教堂着装要求</td><td>随身带外套，遮肩盖膝</td></tr>
+    <tr><td>山区GPS信号弱</td><td>Villa di Geggiano 提前下载离线地图</td></tr>
+    <tr><td>婚礼致辞忘词</td><td>提前写在手机备忘录</td></tr>
+    <tr><td>FCO登机时间不足</td><td>国际航班提前90分钟到登机口</td></tr>
+  </tbody>
+</table>
+
+<!-- ==================== 待确认事项 ==================== -->
+<h2>📌 待确认事项</h2>
+<div class="card">
+  以下事项需要新人/Villa方提供，出发前逐一落实
+  <ul style="margin-top:0.5rem;">
+    <li>☐ 🔴 <strong>Rome返程日期</strong>（5月7日→5月8日？通知海航确认）</li>
+    <li>☐ 🔴 <strong>Rome酒店晚数</strong>（根据返程日期调整）</li>
+    <li>☐ <strong>Colosseum门票</strong>（5月6日，🔴紧急）</li>
+    <li>☐ <strong>Vatican门票</strong>（5月6日，🔴紧急）</li>
+    <li>☐ <strong>万神殿门票</strong>（€5，coopculture.it预约）</li>
+    <li>☐ <strong>佛罗伦萨酒店</strong>（5月2-4日，2晚）</li>
+    <li>☐ 婚礼彩排具体时间（5月4日几点？地点？）</li>
+    <li>☐ 伴郎分工（致辞？迎宾？戒指？）</li>
+    <li>☐ <strong>Dress Code细节</strong>（全黑=Suit还是Tuxedo？领结是Bow Tie还是Ascot？）</li>
+    <li>☐ 婚礼当天新郎团集合时间</li>
+    <li>☐ 锡耶纳住宿（Villa内还是周边？）</li>
+    <li>☐ 彩排晚宴地点和着装</li>
+    <li>☐ <strong>伴郎致辞内容</strong>（现在就可以开始准备了）</li>
+    <li>☐ <strong>返程航班座位</strong>（HU438，5月7日）</li>
+  </ul>
+</div>
+
+<!-- ==================== 景点位置图 ==================== -->
+<h2>🗺️ 景点位置图</h2>
+
+<!-- 佛罗伦萨 -->
+<div style="margin-bottom:2rem;">
+  <h3>🇮🇹 佛罗伦萨 · Firenze</h3>
+  <div class="card" style="padding:0;overflow:hidden;">
+    <img src="florence_map.png" alt="佛罗伦萨景点地图" style="width:100%;display:block;border-radius:10px;">
+    <div style="padding:0.8rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.5rem;font-size:0.78rem;">
+      <div>⛪ <strong>Duomo</strong> — 中心基准点</div>
+      <div>🎨 <strong>Accademia</strong> — 17:30（北）</div>
+      <div>🖼️ <strong>Uffizi</strong> — 16:00（东南）</div>
+      <div>🏛️ <strong>领主广场</strong> — 18:15（南）</div>
+      <div>🌉 <strong>Ponte Vecchio</strong> — 18:45（河上）</div>
+      <div>🌅 <strong>米开朗基罗广场</strong> — 日落（西北城外）</div>
+    </div>
+  </div>
+</div>
+
+<!-- 罗马 -->
+<div style="margin-bottom:2rem;">
+  <h3>🇮🇹 罗马 · Roma</h3>
+  <div class="card" style="padding:0;overflow:hidden;">
+    <img src="rome_map.png" alt="罗马景点地图" style="width:100%;display:block;border-radius:10px;">
+    <div style="padding:0.8rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.5rem;font-size:0.78rem;">
+      <div>🏟️ <strong>斗兽场</strong> — 中心地标（必去）</div>
+      <div>🏛️ <strong>古罗马广场</strong> — 斗兽场北侧</div>
+      <div>⛲ <strong>特莱维喷泉</strong> — 许愿池（北）</div>
+      <div>⛲ <strong>西班牙台阶</strong> — 购物区（北）</div>
+      <div>🏛️ <strong>万神殿</strong> — 古罗马奇迹（中）</div>
+      <div>⛪ <strong>梵蒂冈/圣彼得</strong> — 西部（需半天）</div>
+      <div>🏰 <strong>圣天使城堡</strong> — 台伯河边</div>
+    </div>
+  </div>
+</div>
+
+<!-- 锡耶纳 -->
+<div style="margin-bottom:2rem;">
+  <h3>🇮🇹 锡耶纳 · Siena</h3>
+  <div class="card" style="padding:0;overflow:hidden;">
+    <img src="siena_map.png" alt="锡耶纳景点地图" style="width:100%;display:block;border-radius:10px;">
+    <div style="padding:0.8rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.5rem;font-size:0.78rem;">
+      <div>🐚 <strong>田野广场</strong> — 城市心脏（扇形）</div>
+      <div>🗼 <strong>曼贾塔楼</strong> — 田野广场边（登顶）</div>
+      <div>⛪ <strong>锡耶纳大教堂</strong> — 广场北（条纹穹顶）</div>
+      <div>🚪 <strong>罗马门</strong> — 老城南入口</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 附录：Buccellati邮件 ==================== -->
+<h2>📎 附录：Buccellati 询货邮件（复制即用）</h2>
+
+<div class="card warning">
+  ⚠️ <strong>出发前先发邮件确认有货</strong>，到店直接买，不浪费时间。
+</div>
+
+<h3>邮件1 — Buccellati 罗马直营店</h3>
+<div style="margin-bottom:0.3rem;"><strong>收件人：</strong>roma.condotti@buccellati.com</div>
+<div style="margin-bottom:0.8rem;"><strong>Subject：</strong>Inquiry — Eternelle Blossoms Diamonds Margherita Ring (Visit on May 6)</div>
+<div class="email-block">Dear Buccellati Team,
+
+I am writing to inquire about the availability of the Eternelle Blossoms
+Diamonds Margherita ring (silver with diamonds) at your Via dei Condotti
+boutique. I will be visiting Rome on May 6, 2026, and would love to purchase
+this ring as a surprise gift for my fiancée — our wedding is on June 20, 2026.
+
+She has been wanting this ring for a long time, but it is currently
+unavailable in China. Her ring size is EU 52-53 (she has tried this on at
+a Buccellati counter before).
+
+Could you please let me know:
+1. Do you have the Eternelle Blossoms Diamonds Margherita ring in stock
+   in size 52 or 53?
+2. If not in stock at your Rome boutique, could you check with other
+   Italian boutiques (Milan, Venice, Capri) and have it transferred to Rome
+   before May 6?
+3. What is the price?
+
+Thank you so much for your help — this would truly mean the world to her.
+Looking forward to your reply.
+
+Best regards,
+Joe
+Email: [你的邮箱]</div>
+
+<h3>邮件2 — Beccacece Gioielli（备选）</h3>
+<div style="margin-bottom:0.3rem;"><strong>收件人：</strong>info@beccacecegioielli.it</div>
+<div style="margin-bottom:0.8rem;"><strong>Subject：</strong>Inquiry — Buccellati Eternelle Blossoms Diamonds Margherita Ring</div>
+<div class="email-block">Dear Beccacece Team,
+
+I am visiting Rome on May 6, 2026 and would like to inquire if you carry
+Buccellati jewelry, specifically the Eternelle Blossoms Diamonds Margherita
+ring (silver with diamonds). I am looking to purchase one as a surprise
+gift for my fiancée — our wedding is on June 20, 2026.
+
+She has wanted this ring for a long time, but it is unavailable in China.
+Her ring size is EU 52-53.
+
+Could you please let me know:
+1. Do you carry the Eternelle Blossoms Diamonds Margherita ring?
+   If so, do you have size 52 or 53 in stock?
+2. If available, could you hold one for me to try on May 6?
+3. What is the price?
+
+Thank you very much for your time and assistance.
+
+Best regards,
+Joe
+Email: [你的邮箱]</div>
+
+<blockquote class="tip">💡 两封<strong>同时发</strong>，谁先回复有货就找谁买。</blockquote>
+
+<!-- ==================== FOOTER ==================== -->
+<div class="footer">
+  Document Version: v7.5 · 修订：2026-04-18 · 修订内容：佛罗伦萨→锡耶纳新增普通公路SS2/Via Francigena攻略，替代A1高速方案
+</div>
+
+</div>
+</body>
+</html>
