@@ -266,146 +266,6 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   }
 
-  /* Florence Map CSS Grid */
-  .firenze-map {
-    display: grid;
-    grid-template-columns: 60px 1fr 1fr 60px;
-    grid-template-rows: 60px 1fr 1fr 1fr 60px;
-    gap: 6px;
-    margin-top: 1rem;
-    min-height: 320px;
-  }
-
-  .map-compass-n {
-    grid-column: 2 / 4;
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 0.85rem;
-    color: #94a3b8;
-    font-weight: 600;
-  }
-
-  .map-compass-s {
-    grid-column: 2 / 4;
-    grid-row: 5;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 0.85rem;
-    color: #94a3b8;
-    font-weight: 600;
-  }
-
-  .map-compass-w {
-    grid-column: 1;
-    grid-row: 2 / 5;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 0.85rem;
-    color: #94a3b8;
-    font-weight: 600;
-    writing-mode: vertical-rl;
-  }
-
-  .map-compass-e {
-    grid-column: 4;
-    grid-row: 2 / 5;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 0.85rem;
-    color: #94a3b8;
-    font-weight: 600;
-    writing-mode: vertical-lr;
-  }
-
-  .map-nw-zone {
-    grid-column: 2;
-    grid-row: 2;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .map-ne-zone {
-    grid-column: 3;
-    grid-row: 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-left: 0.5rem;
-  }
-
-  .map-center {
-    grid-column: 2;
-    grid-row: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .map-se-zone {
-    grid-column: 3;
-    grid-row: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 0.5rem;
-  }
-
-  .map-sw-zone {
-    grid-column: 2 / 4;
-    grid-row: 4;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .map-pin {
-    background: #2563eb;
-    border: 2px solid #60a5fa;
-    border-radius: 8px;
-    padding: 4px 8px;
-    font-size: 0.72rem;
-    line-height: 1.4;
-    color: #fff;
-    white-space: nowrap;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  }
-
-  .map-pin .pin-time {
-    color: #fbbf24;
-    font-weight: 700;
-  }
-
-  .map-pin .pin-sub {
-    color: #94a3b8;
-    font-size: 0.65rem;
-  }
-
-  .map-connector {
-    font-size: 0.68rem;
-    color: #64748b;
-    margin-top: 3px;
-  }
-
-  .map-arrow-down {
-    font-size: 0.9rem;
-    color: #60a5fa;
-    text-align: center;
-  }
-
-  .map-label-axis {
-    font-size: 0.7rem;
-    color: #475569;
-    margin-top: 2px;
-  }
-
   /* Email block */
   .email-block {
     background: #f8f7f5;
@@ -829,6 +689,20 @@ Day 2 · 5月3日
   ⚠️ <strong>5月3日周日：大教堂关闭，但穹顶登顶正常。</strong>
 </blockquote>
 
+<!-- 🗺️ 佛罗伦萨地图（Day 1 + Day 2 适用） -->
+<div style="margin:1.5rem 0;">
+  <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:0.4rem;">📍 佛罗伦萨景点地图 · 附景点速览</div>
+  <img src="florence_map.png" alt="佛罗伦萨景点地图" style="width:100%;border-radius:10px;display:block;margin-bottom:0.6rem;">
+  <div style="display:flex;flex-wrap:wrap;gap:0.4rem;font-size:0.72rem;">
+    <span style="background:#dbeafe;color:#1e40af;padding:3px 8px;border-radius:6px;">⛪ Duomo — 中心基准</span>
+    <span style="background:#fef3c7;color:#92400e;padding:3px 8px;border-radius:6px;">🎨 Accademia — 17:30（北）</span>
+    <span style="background:#ede9fe;color:#5b21b6;padding:3px 8px;border-radius:6px;">🖼️ Uffizi — 16:00（东南）</span>
+    <span style="background:#e0f2fe;color:#0c4a6e;padding:3px 8px;border-radius:6px;">🏛️ 领主广场 — 18:15（南）</span>
+    <span style="background:#ffe4e6;color:#881337;padding:3px 8px;border-radius:6px;">🌉 老桥 — 18:45（河上）</span>
+    <span style="background:#f0fdf4;color:#14532d;padding:3px 8px;border-radius:6px;">🌅 米开朗基罗广场 — 日落（西北城外）</span>
+  </div>
+</div>
+
 <!-- ==================== DAY 3 ==================== -->
 <hr>
 <h2>DAY 3 · 5月4日 · 佛罗伦萨 → 锡耶纳</h2>
@@ -924,6 +798,18 @@ Day 2 · 5月3日
     <tr><td><strong>职责</strong></td><td>致辞顺序确认 + 婚礼当天迎宾引导</td></tr>
   </tbody>
 </table>
+
+<!-- 🗺️ 锡耶纳地图（Day 3 适用） -->
+<div style="margin:1.5rem 0;">
+  <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:0.4rem;">📍 锡耶纳景点地图 · 附景点速览</div>
+  <img src="siena_map.png" alt="锡耶纳景点地图" style="width:100%;border-radius:10px;display:block;margin-bottom:0.6rem;">
+  <div style="display:flex;flex-wrap:wrap;gap:0.4rem;font-size:0.72rem;">
+    <span style="background:#fef3c7;color:#92400e;padding:3px 8px;border-radius:6px;">🐚 田野广场 — 城市心脏（扇形广场）</span>
+    <span style="background:#dbeafe;color:#1e40af;padding:3px 8px;border-radius:6px;">🗼 曼贾塔楼 — 登顶俯瞰全城</span>
+    <span style="background:#f0fdf4;color:#14532d;padding:3px 8px;border-radius:6px;">⛪ 锡耶纳大教堂 — 广场北（条纹穹顶）</span>
+    <span style="background:#ede9fe;color:#5b21b6;padding:3px 8px;border-radius:6px;">🚪 罗马门 — 老城南入口</span>
+  </div>
+</div>
 
 <!-- ==================== DAY 4 ==================== -->
 <hr>
@@ -1066,6 +952,21 @@ Day 2 · 5月3日
   </tbody>
 </table>
 <blockquote class="tip">⭐ 万神殿距特莱维喷泉步行10分钟，距西班牙广场步行5分钟，路线顺畅。</blockquote>
+
+<!-- 🗺️ 罗马景点地图（Day 5 + Day 6 适用） -->
+<div style="margin:1.5rem 0;">
+  <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:0.4rem;">📍 罗马景点地图 · 附景点速览</div>
+  <img src="rome_map.png" alt="罗马景点地图" style="width:100%;border-radius:10px;display:block;margin-bottom:0.6rem;">
+  <div style="display:flex;flex-wrap:wrap;gap:0.4rem;font-size:0.72rem;">
+    <span style="background:#ffe4e6;color:#881337;padding:3px 8px;border-radius:6px;">🏟️ 斗兽场 — 中心地标（必去）</span>
+    <span style="background:#e0f2fe;color:#0c4a6e;padding:3px 8px;border-radius:6px;">⛲ 特莱维喷泉 — 许愿池（日落前）</span>
+    <span style="background:#fef3c7;color:#92400e;padding:3px 8px;border-radius:6px;">🛍️ 西班牙台阶 — 购物区（傍晚）</span>
+    <span style="background:#dbeafe;color:#1e40af;padding:3px 8px;border-radius:6px;">⛪ 万神殿 — 古罗马奇迹（光线最美）</span>
+    <span style="background:#ede9fe;color:#5b21b6;padding:3px 8px;border-radius:6px;">🏛️ 古罗马广场 — 斗兽场北侧</span>
+    <span style="background:#f0fdf4;color:#14532d;padding:3px 8px;border-radius:6px;">⛪ 梵蒂冈/圣彼得 — 西部（需半天）</span>
+    <span style="background:#fff7ed;color:#7c2d12;padding:3px 8px;border-radius:6px;">🏰 圣天使城堡 — 台伯河边</span>
+  </div>
+</div>
 
 <!-- ==================== DAY 6 ==================== -->
 <hr>
@@ -1216,56 +1117,6 @@ Day 2 · 5月3日
     <li>☐ <strong>伴郎致辞内容</strong>（现在就可以开始准备了）</li>
     <li>☐ <strong>返程航班座位</strong>（HU438，5月7日）</li>
   </ul>
-</div>
-
-<!-- ==================== 景点位置图 ==================== -->
-<h2>🗺️ 景点位置图</h2>
-
-<!-- 佛罗伦萨 -->
-<div style="margin-bottom:2rem;">
-  <h3>🇮🇹 佛罗伦萨 · Firenze</h3>
-  <div class="card" style="padding:0;overflow:hidden;">
-    <img src="florence_map.png" alt="佛罗伦萨景点地图" style="width:100%;display:block;border-radius:10px;">
-    <div style="padding:0.8rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.5rem;font-size:0.78rem;">
-      <div>⛪ <strong>Duomo</strong> — 中心基准点</div>
-      <div>🎨 <strong>Accademia</strong> — 17:30（北）</div>
-      <div>🖼️ <strong>Uffizi</strong> — 16:00（东南）</div>
-      <div>🏛️ <strong>领主广场</strong> — 18:15（南）</div>
-      <div>🌉 <strong>Ponte Vecchio</strong> — 18:45（河上）</div>
-      <div>🌅 <strong>米开朗基罗广场</strong> — 日落（西北城外）</div>
-    </div>
-  </div>
-</div>
-
-<!-- 罗马 -->
-<div style="margin-bottom:2rem;">
-  <h3>🇮🇹 罗马 · Roma</h3>
-  <div class="card" style="padding:0;overflow:hidden;">
-    <img src="rome_map.png" alt="罗马景点地图" style="width:100%;display:block;border-radius:10px;">
-    <div style="padding:0.8rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.5rem;font-size:0.78rem;">
-      <div>🏟️ <strong>斗兽场</strong> — 中心地标（必去）</div>
-      <div>🏛️ <strong>古罗马广场</strong> — 斗兽场北侧</div>
-      <div>⛲ <strong>特莱维喷泉</strong> — 许愿池（北）</div>
-      <div>⛲ <strong>西班牙台阶</strong> — 购物区（北）</div>
-      <div>🏛️ <strong>万神殿</strong> — 古罗马奇迹（中）</div>
-      <div>⛪ <strong>梵蒂冈/圣彼得</strong> — 西部（需半天）</div>
-      <div>🏰 <strong>圣天使城堡</strong> — 台伯河边</div>
-    </div>
-  </div>
-</div>
-
-<!-- 锡耶纳 -->
-<div style="margin-bottom:2rem;">
-  <h3>🇮🇹 锡耶纳 · Siena</h3>
-  <div class="card" style="padding:0;overflow:hidden;">
-    <img src="siena_map.png" alt="锡耶纳景点地图" style="width:100%;display:block;border-radius:10px;">
-    <div style="padding:0.8rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.5rem;font-size:0.78rem;">
-      <div>🐚 <strong>田野广场</strong> — 城市心脏（扇形）</div>
-      <div>🗼 <strong>曼贾塔楼</strong> — 田野广场边（登顶）</div>
-      <div>⛪ <strong>锡耶纳大教堂</strong> — 广场北（条纹穹顶）</div>
-      <div>🚪 <strong>罗马门</strong> — 老城南入口</div>
-    </div>
-  </div>
 </div>
 
 <!-- ==================== 附录：Buccellati邮件 ==================== -->
